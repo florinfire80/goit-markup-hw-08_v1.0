@@ -3,9 +3,9 @@
 .section {
   &__card-set {
     display: grid; /* Utilizează grid layout pentru a distribui elementele în coloane */
-    grid-template-columns: repeat(4, 1fr); /* Creează patru coloane egale */
+    grid-template-columns: repeat 1fr; /* Creează patru coloane egale */
     gap: 30px;
-    padding: 0;
+    padding: 0 15px;
     list-style: none;
     &-icon {
       background-color: #f5f4fa;
@@ -21,6 +21,12 @@
         height: 70px;
       }
     }
+    h3 {
+      text-align: center; /* Alinează doar h3 la centru */
+    }
+    p {
+      text-align: left; /* Alinează p la stânga */
+    }
   }
   &__main-text {
     font-weight: 400;
@@ -31,3 +37,35 @@
     width: auto;
   }
 }
+
+// .section {
+//   &__card-set {
+//     display: grid; /* Utilizează grid layout pentru a distribui elementele în coloane */
+//     grid-template-columns: repeat(4, 1fr); /* Creează patru coloane egale */
+//     gap: 30px;
+//     padding: 0;
+//     list-style: none;
+//     &-icon {
+//       background-color: #f5f4fa;
+//       margin-bottom: 30px;
+//       padding: 25px 0;
+//       border-radius: 4px;
+//       width: auto;
+//       height: auto;
+//       display: flex;
+//       justify-content: center;
+//       & svg {
+//         width: 70px;
+//         height: 70px;
+//       }
+//     }
+//   }
+//   &__main-text {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: #757575;
+//     width: auto;
+//   }
+// }
