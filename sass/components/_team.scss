@@ -1,0 +1,67 @@
+/* Our team section */
+
+.section {
+  &__team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    background-color: #f5f4fa;
+    margin: 0 auto;
+    width: auto;
+    & .team__card-position {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+.team {
+  &__card-set {
+    display: flex; /* Utilizăm flexbox pentru a aranja cardurile în linie */
+    padding: 0; /* Eliminăm spațiul de la începutul listei */
+    padding-top: 50px;
+  }
+  &__card-item {
+    flex: 1; /* Distribuim spațiul disponibil în mod egal între carduri */
+    margin-right: 30px; /* Adăugăm un spațiu între carduri */
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    &:last-child {
+      margin-right: 0; /* Nu adăugăm spațiu la ultimul card */
+    }
+  }
+  &__card-img {
+    max-width: 100%; /* Asigurăm că imaginile din interiorul cardurilor nu depășesc lățimea */
+    height: auto;
+    padding-bottom: 30px;
+  }
+  &__card-position {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--employee-text-color);
+    padding-bottom: 30px;
+  }
+  &__social-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: #afb1b8;
+    &:hover,
+    &:focus {
+      color: var(--link-active-color);
+      background-color: var(--link-active-color);
+      transition: transform var(--transition);
+      fill: var(--link-active-color);
+    }
+  }
+}

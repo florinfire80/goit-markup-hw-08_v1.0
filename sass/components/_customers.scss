@@ -1,0 +1,37 @@
+/*Regular customers section*/
+
+.customers-icon {
+  &__set {
+    display: grid; /* Utilizează grid layout pentru a distribui elementele în coloane */
+    grid-template-columns: repeat(6, 1fr); /* Creează sase coloane egale */
+    gap: 30px;
+    padding: 0;
+    background-color: #ffffff;
+    margin-top: 50px;
+  }
+  &__item {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: var(--link-active-color);
+      border: 1px solid var(--link-active-color);
+      transition: var(--transition);
+    }
+  }
+  &__svg {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    &:hover,
+    &:focus {
+      color: var(--link-active-color);
+      fill: var(--link-active-color);
+      transition: var(--transition);
+    }
+  }
+}

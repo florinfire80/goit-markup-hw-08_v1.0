@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Header-->
+
+    <section class="section-header">
+      <header class="container header">
+        <a class="header__logo" href="index.html"
+          ><span class="header__logo--color">Web</span>Studio</a
+        >
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item">
+              <a href="/index.html" class="header-nav__list-link">Studio</a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="/portfolio.html" class="header-nav__list-link">Portfolio</a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="/contact.html" class="header-nav__list-link--active header-nav__list-link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact-link">
+          <div class="header__contact-container">
+            <svg class="header__contact-icon">
+              <use href="./css/icons.svg#icon-envelope"></use>
+            </svg>
+            <a class="header__link-contact" href="mailto:info@devstudio.com" aria-label="email">
+              info@devstudio.com</a
+            >
+          </div>
+          <div class="header__contact-container">
+            <svg class="header__contact-icon">
+              <use href="./css/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a class="header__link-contact" href="tel:+12127724150" aria-label="phone">
+              +1 212-772-4150
+            </a>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <!--Footer/contact section-->
+
+    <div class="footer-background-section">
+      <div class="container">
+        <footer>
+          <div class="footer">
+            <div>
+              <a href="index.html" class="footer__logo"
+                ><span class="footer__logo--color">Web</span>Studio</a
+              >
+              <address class="address">
+                <p class="address__str">695 Park Ave, NY 10065, USA</p>
+                <p>
+                  <a class="address__email-phone" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </p>
+                <p><a class="address__email-phone" href="tel:+12127724150">+1 212-772-4150</a></p>
+              </address>
+            </div>
+            <div class="footer__social-svg">
+              <h3 class="footer__title">Find us on</h3>
+              <div class="footer__social">
+                <a href="https://instagram.com" aria-label="Instagram">
+                  <svg class="footer__social-icon">
+                    <use href="./css/icons.svg#icon-instagram1"></use>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                  <svg class="footer__social-icon">
+                    <use href="./css/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" aria-label="Facebook">
+                  <svg class="footer__social-icon">
+                    <use href="./css/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                  <svg class="footer__social-icon">
+                    <use href="./css/icons.svg#icon-linkedin1"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer__subscribe-form">
+              <h3 class="footer__title">Subscribe to the newsletter</h3>
+              <form>
+                <input
+                  class="footer__form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button class="footer__btn-subscribe" type="submit">
+                  Subscribe<img
+                    class="sending-icon"
+                    src="./images/icon-send.png"
+                    alt="sending-icon"
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

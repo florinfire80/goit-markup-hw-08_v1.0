@@ -1,0 +1,43 @@
+@import "./utils/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css");
+@import "./utils/reset.scss";
+@import "./components/_buttons.scss";
+@import "./components/_customers.scss";
+@import "./components/_footer.scss";
+@import "./components/_form.scss";
+@import "./components/_header.scss";
+@import "./components/_hero.scss";
+@import "./components/_modal.scss";
+@import "./components/_portfolio.scss";
+@import "./components/_strengths.scss";
+@import "./components/_team.scss";
+@import "./components/_wwdo.scss";
+
+.section {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 480px; // Mobile First, deci latimea maxima pana ajunge la maximul pentru mobil */
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  .container {
+    max-width: 768px; /* Maximul pentru tableta */
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .container {
+    max-width: 1200px; /* Maximul pentru desktop */
+  }
+  .section {
+    max-width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

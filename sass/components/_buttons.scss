@@ -1,0 +1,127 @@
+.section__hero-button {
+  background: var(--button-main-background-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--button-main-text-color);
+  cursor: pointer;
+  margin-top: 40px;
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  &:hover,
+  &:focus {
+    color: #d2c7c7;
+    background-color: #0c5087;
+    transition: var(--transition);
+    transform: scale(1.1);
+  }
+}
+.footer__btn-subscribe {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 70px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  & img {
+    position: absolute; /* Poziționare absolută față de buton */
+    top: 50%; /* O poziționăm pe axa verticală la 50% */
+    left: 70%; /* O poziționăm pe axa orizontală la 50% */
+    transform: translate(-50%, -50%); /* Centrare pe mijlocul butonului */
+    width: 24px; /* Lățimea imaginii */
+    height: 24px; /* Înălțimea imaginii */
+  }
+  &:hover,
+  &:focus {
+    color: #d2c7c7;
+    background-color: #0c5087;
+    transition: var(--transition);
+    transform: scale(1.1);
+  }
+}
+
+.portfolio-button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #f5f4fa;
+  padding: 6px 22px;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    color: #ffffff;
+    background: var(--link-active-color);
+    transition: var(--transition);
+  }
+  &--active {
+    color: #ffffff;
+    background-color: var(--link-active-color);
+  }
+}
+
+.modal__close-btn {
+  outline: none;
+  cursor: pointer;
+  color: #000000;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    color: var(--link-active-color);
+    background: #d1cece;
+    transition: transform var(--transition);
+  }
+}
+
+/* Stilizare pentru butonul de submit */
+
+.modal__send-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 30px;
+  align-self: center;
+  margin-left: 30%;
+  &:hover,
+  &:focus {
+    color: black;
+    background: #4478e9;
+    transition: transform var(--transition);
+  }
+}
