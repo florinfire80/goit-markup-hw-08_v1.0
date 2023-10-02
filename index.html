@@ -15,6 +15,17 @@
         <a class="header__logo" href="index.html"
           ><span class="header__logo--color">Web</span>Studio</a
         >
+
+        <!-- Container pentru meniul burger -->
+
+        <button class="hamburger-menu" data-menu-open>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+
+        <!-- Meniul de navigare pentru ecrane mari -->
+
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__list-item">
@@ -309,7 +320,7 @@
     <!--Footer/contact section-->
 
     <div class="footer-background-section">
-      <div class="container">
+      <div class="container container--mobile">
         <footer>
           <div class="footer">
             <div>
@@ -353,7 +364,7 @@
             </div>
             <div class="footer__subscribe-form">
               <h3 class="footer__title">Subscribe to the newsletter</h3>
-              <form>
+              <form class="footer__wrapper">
                 <input
                   class="footer__form-input"
                   type="email"
@@ -376,7 +387,48 @@
       </div>
     </div>
 
-    <!--Modal-->
+    <!-- Meniul burger -->
+
+    <div class="burger-modal burger__is-hidden" data-menu>
+      <div class="burger-modal-content">
+        <nav class="burger-nav">
+          <ul class="burger-nav__list">
+            <li class="burger-nav__list-item">
+              <a href="/index.html" class="burger-nav__list-link--active burger-nav__list-link">
+                Studio
+              </a>
+            </li>
+            <li class="burger-nav__list-item">
+              <a href="/portfolio.html" class="burger-nav__list-link">Portfolio</a>
+            </li>
+            <li class="burger-nav__list-item">
+              <a href="/contact.html" class="burger-nav__list-link">Contacts</a>
+            </li>
+            <div class="spacer"></div>
+            <li class="burger-nav__list-item">
+              <a href="tel:+12127724150" class="burger-nav__list-link">+1 212-772-4150</a>
+            </li>
+            <li class="burger-nav__list-item">
+              <a href="mailto:info@devstudio.com" class="burger-nav__list-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="https://instagram.com" class="social-link">Instagram</a>
+            <span class="social-divider">|</span>
+            <a href="https://twitter.com" class="social-link">Twitter</a>
+            <span class="social-divider">|</span>
+            <a href="https://facebook.com" class="social-link">Facebook</a>
+            <span class="social-divider">|</span>
+            <a href="https://linkedin.com" class="social-link">LinkedIn</a>
+          </div>
+        </nav>
+        <button class="burger-close-btn" data-menu-close>&times;</button>
+      </div>
+    </div>
+
+    <!--Modal-hero-section-->
 
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
@@ -427,7 +479,7 @@
             id="comments"
             name="comments"
             placeholder="Introduceți comentariile"
-            rows="6"
+            rows="4"
           ></textarea>
           <div class="agree-checkbox">
             <input type="checkbox" id="agree" name="agree" required />
@@ -442,6 +494,7 @@
         </form>
       </div>
     </div>
+    <script src="./burger-menu.js" type="text/javascript"></script>
     <script src="./modal.js" type="text/javascript"></script>
   </body>
 </html>

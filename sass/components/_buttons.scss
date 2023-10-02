@@ -1,3 +1,26 @@
+// Hamburger menu
+
+.hamburger-menu {
+  display: inline-block;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  margin-left: auto;
+}
+.hamburger-menu:hover .bar,
+.hamburger-menu:focus .bar {
+  background-color: #2196f3;
+}
+.bar {
+  width: 20px;
+  height: 3px;
+  background-color: #212121;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
 .section__hero-button {
   background: var(--button-main-background-color);
   font-size: 16px;
@@ -17,10 +40,58 @@
     transform: scale(1.1);
   }
 }
+
+/* Stilizare pentru butonul de submit modal hero section */
+
+.modal__send-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 30px;
+  align-self: center;
+  margin-left: 25%;
+  &:hover,
+  &:focus {
+    color: black;
+    background: #4478e9;
+    transition: transform var(--transition);
+  }
+}
+.modal__close-btn {
+  outline: none;
+  cursor: pointer;
+  color: #000000;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    color: var(--link-active-color);
+    background: #d1cece;
+    transition: transform var(--transition);
+  }
+}
+
 .footer__btn-subscribe {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 70px;
@@ -36,12 +107,12 @@
   cursor: pointer;
   position: relative;
   & img {
-    position: absolute; /* Poziționare absolută față de buton */
-    top: 50%; /* O poziționăm pe axa verticală la 50% */
-    left: 70%; /* O poziționăm pe axa orizontală la 50% */
+    position: absolute;
+    top: 50%;
+    left: 70%;
     transform: translate(-50%, -50%); /* Centrare pe mijlocul butonului */
-    width: 24px; /* Lățimea imaginii */
-    height: 24px; /* Înălțimea imaginii */
+    width: 24px;
+    height: 24px;
   }
   &:hover,
   &:focus {
@@ -76,52 +147,5 @@
   &--active {
     color: #ffffff;
     background-color: var(--link-active-color);
-  }
-}
-
-.modal__close-btn {
-  outline: none;
-  cursor: pointer;
-  color: #000000;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  &:hover,
-  &:focus {
-    color: var(--link-active-color);
-    background: #d1cece;
-    transition: transform var(--transition);
-  }
-}
-
-/* Stilizare pentru butonul de submit */
-
-.modal__send-btn {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding: 10px 20px;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  width: 200px;
-  margin-top: 30px;
-  align-self: center;
-  margin-left: 30%;
-  &:hover,
-  &:focus {
-    color: black;
-    background: #4478e9;
-    transition: transform var(--transition);
   }
 }

@@ -54,17 +54,20 @@ h1 {
   }
 }
 h2 {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
+}
+@media screen and (min-width: $tablet-breakpoint) {
+  h2 {
+    font-size: 36px;
+  }
 }
 h3 {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   padding-bottom: 10px;
-}
-@media screen and (min-width: $mobile-breakpoint) {
 }
 ul {
   list-style-type: none;

@@ -1,42 +1,51 @@
 /* What we do section */
 
-.wwdo {
-  &__card-set {
-    display: flex; /* Utilizăm flexbox pentru a aranja imaginile în linie */
-    padding: 0; /* Eliminăm spațiul de la începutul listei */
-    padding-top: 50px;
+.section__wwdo {
+  display: none;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .section__wwdo {
+    display: block;
   }
-  &__card-item {
-    flex: 1; /* Distribuim spațiul disponibil în mod egal între imaginile din listă */
-    margin-right: 45px; /* Adăugăm un spațiu mic între imagini */
-    position: relative; /* Faceți containerul "poziționat" pentru a permite plasarea elementelor copil absolut */
-    &:last-child {
-      margin-right: 0; /* Nu adăugăm spațiu la ultima imagine */
+  .wwdo {
+    &__card-set {
+      display: flex;
+      padding: 0; /* Eliminăm spațiul de la începutul listei */
+      padding-top: 50px;
     }
-    & .wwdo__card-label {
-      position: absolute; /* Faceți eticheta "poziționată" absolut în interiorul containerului */
-      bottom: 0; /* Plasați eticheta în partea de jos a containerului */
-      left: 0; /* Plasați eticheta în partea stângă a containerului */
-      background-color: #2f303acc;
-      padding: 25px 20px; /* Spațiere între text și marginea etichetei */
-      margin: 0; /* Eliminați marginile implicite */
-      width: 100%;
-      height: 24%;
+    &__card-item {
+      flex: 1; /* Distribuim spațiul disponibil în mod egal între imaginile din listă */
+      margin-right: 45px; /* Adăugăm un spațiu mic între imagini */
+      position: relative;
+      &:last-child {
+        margin-right: 0; /* Nu adăugăm spațiu la ultima imagine */
+      }
+      & .wwdo__card-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #2f303acc;
+        padding: 25px 20px; /* Spațiere între text și marginea etichetei */
+        margin: 0; /* Eliminați marginile implicite */
+        width: 100%;
+        height: 24%;
+      }
     }
-  }
-  &__card-label {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  &__card-img {
-    width: 100%; /* Asigurăm că imaginile nu depășesc lățimea containerului */
-    height: auto;
+    &__card-label {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    &__card-img {
+      width: 100%; /* Asigurăm că imaginile nu depășesc lățimea containerului */
+      height: auto;
+    }
   }
 }

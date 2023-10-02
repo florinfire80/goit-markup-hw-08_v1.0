@@ -1,4 +1,77 @@
-/*Modal*/
+/* Stilurile pentru meniul burger */
+.burger-modal {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.burger-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.burger-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+.burger-close-btn:hover,
+.burger-close-btn:focus {
+  color: var(--link-active-color);
+}
+.burger-nav__list-link {
+  color: #212121;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+}
+.spacer {
+  height: 30px;
+}
+.burger__is-hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+/* Stilurile pentru containerul de linkuri sociale */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Stilurile pentru linkurile sociale */
+.social-link {
+  text-decoration: none;
+  color: var(--link-active-color);
+  margin-right: 10px;
+}
+
+/* Stilurile pentru separatorul vertical (bara) */
+.social-divider {
+  color: rgba(33, 33, 33, 0.2);
+  font-weight: bold;
+  margin-right: 10px;
+}
+@media screen and (min-width: $mobile-breakpoint) {
+  .burger-modal {
+    display: none;
+  }
+}
+/*Modal-hero*/
 
 .modal {
   position: fixed;
@@ -23,8 +96,8 @@
     padding: 0 40px;
     background: #ffffff;
     margin: 0 auto;
-    width: 35vw;
-    height: 80vh;
+    width: 450px;
+    height: 609px;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -35,10 +108,15 @@
     text-align: left;
   }
 }
-
 .is-hidden {
   visibility: hidden; /* Face elementul invizibil, dar îl păstrează în fluxul documentului */
   opacity: 0; /* Face elementul complet transparent */
   pointer-events: none; /* Dezactivează evenimentele de la element, astfel încât acesta să nu fie interactiv */
   transform: scale(1.1);
+}
+@media screen and (min-width: $tablet-breakpoint) {
+  modal-content {
+    width: 528px;
+    height: 581px;
+  }
 }
